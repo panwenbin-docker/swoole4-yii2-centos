@@ -14,6 +14,6 @@ RUN yum install -y http://repo1.sea.innoscale.net/remi/enterprise/remi-release-7
   && mv composer.phar /usr/bin/composer \
   && rm -f composer-setup.php
   
-EXPOSE 9000
+EXPOSE 8000
 
-CMD ["php-fpm", "-F"]
+CMD ["php", "-v"]
